@@ -1,0 +1,625 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(223, 223, 223);
+    
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+header nav ul li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 3;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background:red;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  header nav ul li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+li{
+    list-style-type: none;
+}
+
+section.btn-up{
+    width: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    display: none;
+    transition: .3s;
+
+    
+}
+section.btn-up i{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    z-index: 10;
+    color: red;
+    
+    
+}
+
+section.btn-up:hover{
+    cursor: pointer;
+    bottom: 60px;
+}
+
+section.btn-up i:hover{
+    cursor: pointer;
+    
+}
+
+#container{
+    
+}
+
+ /*///////////MENU///////////*/ 
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+     width: 100vw;
+     height: 10vh;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+header .nav_links{
+    width: 30vw;
+    font-size: 3.2em;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: white;
+}
+
+header .nav_link
+s span{
+    font-size: 3.2rem;
+    color: red;
+}
+
+header nav ul{
+    width: 70vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav ul li a{
+    font-size: 2em;
+    color: white;
+}
+
+section{
+    margin-bottom:50px;
+}
+
+
+
+/*///////////BANER///////////*/ 
+
+section.baner{
+    /* display: block;   
+    */ 
+    position: relative; 
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url("img/pexels-photo-303383.jpeg"); */
+    /* background-size: cover;*/
+} 
+section.baner img{
+    width: 100vw;
+    height: 100vh;
+    position: absolute; 
+    object-fit: cover;
+    
+}
+
+.toggle_img img{
+}
+
+section .content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section .content h1{
+    font-size: 5.2rem;
+    color: white;
+    margin: 20px;
+    z-index: 5;
+}
+
+section .content p{
+    font-size: 5.2rem;
+    color: white;
+    margin: 20px;
+    z-index: 5;
+}
+
+section .content .btn_links{
+    align-items: center;
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin: 20px;
+}
+
+section .content .btn_links span{
+    font-size: 2.2rem;
+    color: red;
+}
+
+section .content .btn_links{
+    font-size: 2.0rem;
+    color: white;
+}
+
+/*///////////ABOUT_ME///////////*/ 
+
+section.about{
+    width: 100vw;
+    height: 50vh;
+    background-color: white;
+    overflow: hidden; 
+    
+   
+}
+
+section.about .row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*///////////ABOUT_ME LEFT///////////*/ 
+
+section.about .row .box_left50{
+    width: 50%;
+    max-width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+
+    
+}
+
+section.about .row .box_left50 h2{
+    font-size: 5.2rem;
+    color:red  ;
+    margin-bottom: 5px;
+}
+
+section.about .row .box_left50 h2 span{
+    font-size: 5.2rem;
+    color:gray;
+    margin-bottom: 5px;
+}
+
+section.about .row .box_left50 p{
+    font-size: 1.9rem;
+    margin-bottom: 5px;
+    color: grey;
+}
+
+section.about .row .box_left50 h1{
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: grey;
+}
+
+section.about .row .box_left50 h3{
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: grey;
+}
+
+
+/*///////////ABOUT_ME RIGHT///////////*/ 
+
+section.about .row .box_right50{
+    width: 50%;
+    max-height: 100%;
+    position: relative;
+    
+}
+
+section.about .row .box_right50 .img_Box{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+section.about .row .box_right50 .img_Box img{
+    width: 100%;
+    height: auto;
+}
+
+/*///////////SKILLS///////////*/ 
+
+section.skills{
+    width: 100vw;
+    height: auto;
+    
+}
+section.skills h2{
+    font-size: 5.2rem;
+    color:red  ;
+    margin: 10px;
+}
+
+section.skills span{
+    font-size: 5.2rem;
+    color:gray;
+    margin-bottom: 5px;
+}
+
+section.skills .row{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+
+section.skills .row .box_skills{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.skills .row .box_skills .box_row{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.skills .row .box_skills .box_row .box{
+    width: 200px;
+    height: 40vh;
+    border: 3px solid gray;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-direction: column;
+    box-shadow: 0 0 20px gray; 
+    transition: .3s;
+
+}
+
+section.skills .row .box_skills .box_row .box:hover{
+    opacity: .8;
+    transform: rotate(2deg)
+}
+
+section.skills .row .box_skills .box_row .box i{
+    font-size: 10rem;
+    color: grey;
+}
+
+section.skills .row .box_skills .box_row .box h1{
+    font-size: 3.5rem;
+    color: red;
+}
+
+section.skills .row .box_skills .box_row .box p{
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+/*///////////PROJECT///////////*/
+section.project{
+    width: 100vw;
+    height: auto;
+    
+    
+}
+
+section.project h2{
+    font-size: 5.2rem;
+    color:red  ;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+section.project span{
+    font-size: 5.2rem;
+    color:gray;
+    margin-bottom: 5px;
+}
+
+section.project .row{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+section.project .row .box{
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    opacity: .6;
+}
+
+section.project .row .box:hover{
+    opacity: 1
+}
+
+section.project .row .box .titlle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.project .row .box .titlle p{
+    font-size: 4rem;
+    color: grey;
+}
+
+section.project .row .box img{
+    width: 100%;
+}
+
+
+/*///////////CONTACT///////////*/ 
+
+section.contact{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+section.contact h2{
+    font-size: 5.2rem;
+    color:red  ;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+section.contact span{
+    font-size: 5.2rem;
+    color:gray;
+    margin-bottom: 5px;
+}
+
+section.contact .row{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+section.contact .row .box_left50{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.contact .row .box_left50 label h2{
+    font-size: 2rem;
+}
+
+section.contact .row .box_left50 label span{
+    font-size: 2rem;
+}
+
+section.contact .row .box_left50 input{
+    font-size: 2rem;
+    width: 80%;
+    color: gray;
+    padding: 2px;
+}
+
+section.contact .row .box_left50 input::placeholder{
+    padding: 2px;
+}
+
+
+section.contact .row .box_left50 textarea{
+    font-size: 2rem;
+    width: 80%;
+    color: gray;
+    padding: 2px;
+    
+}
+
+section.contact .row .box_left50 button{
+    width: 20%;
+    height: 10%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: red;
+}
+
+section.contact .row .box_left50 button:hover{
+    cursor: pointer;
+}
+section.contact .row .box_left50 .sociall_links{
+    display: flex;
+
+}
+section.contact .row .box_left50 .sociall_links a{
+    width: 100%;
+    text-decoration: none;
+    color: grey;
+    transition: .3s;
+    
+
+}
+
+section.contact .row .box_left50 .sociall_links a i{
+    font-size: 3rem;
+    margin: 5px;
+}
+
+section.contact .row .box_left50 .sociall_links a:hover{
+    cursor: pointer;
+    color: red;
+}
+
+section.contact .row .box_right50{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.contact .row .box_right50 iframe{
+    width: 50vw;
+    height: 50vh;
+}
+
+
+/*/////////////////////////// R W D ////////////////////////////////////*/ 
+
+
+
+@media (max-width:768px){
+
+    *{
+        font-size: 8px;
+    }
+
+    section.about{
+        height: auto;
+    }
+
+    section.about .row{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    section.about .row .box_left50{
+        width: 80%;
+    }
+
+    section.about .row .box_right50{
+        width: 80%;
+    }
+
+    section.contact{
+        height: auto;
+    }
+
+    section.contact .row{
+        height: auto;
+        flex-direction: column;
+    }
+
+    section.contact .row .box_left50{
+        width: 80%;
+        height: auto;
+    }
+    section.contact .row .box_right50{
+        width: 80%;
+        height: auto;
+    }
+
+    section.contact .row .box_right50 iframe{
+        width: 80%;
+        height: auto;
+    }
+    
+}
+
+@media (max-width:768px){
+    section.contact .row .box_left50{
+        width: 100%;
+        height: auto;
+    }
+    section.contact .row .box_right50{
+        width: 100%;
+        height: auto;
+    }
+
+    section.contact .row .box_right50 iframe{
+        width: 100%;
+        height: auto;
+    } 
+}
+
+
+
+
+
+
+
+
+
